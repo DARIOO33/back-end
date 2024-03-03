@@ -8,7 +8,7 @@ const createOrder = async (req, res) => {
     const data = await OrderModel.find()
     const count = data.length + 1
     console.log(count);
-    const order = OrderModel.create({ fullname, num: count, type, detail, income, initialPrice, date,norders })
+    const order = OrderModel.create({ fullname, num: count, type, detail, income, initialPrice, date,num_orders:norders })
     res.status(200).json(order)
 
 }
