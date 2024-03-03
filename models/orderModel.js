@@ -17,7 +17,6 @@ const orderSchema = new Schema({
     },
     detail: {
         type: String,
-        // required: true
     },
     income: {
         type: Number,
@@ -30,6 +29,10 @@ const orderSchema = new Schema({
     date: {
         type: Date,
         required: true
+    },
+    num_orders: {
+        type: Number,
+        required: false
     },
 
 
